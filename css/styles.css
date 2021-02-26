@@ -8,6 +8,10 @@
   --contacts-footer-color: rgba(255, 255, 255, 0.6);
   --main-bgr-color: #e5e5e5;
   --secondary-bgr-color: #2f303a;
+  --logo-black-theme: #000;
+  --logo-white-theme: #fff; 
+  --btn-background: #F5F4FA;
+  
 }
 
 body {
@@ -40,14 +44,14 @@ font-family: var(--secondary-font);
 font-style: 700;
 font-size: 26px;
 line-height: 1.19;
-color: #000000;
+color: var(--logo-black-theme);
 }
 .logo-white-item {
 font-family: var(--secondary-font);
 font-style: 700;
 font-size: 26px;
 line-height: 1.19;
-color: #FFFFFF;
+color: var(--logo-white-theme);
 }
 
 .nav-link {
@@ -160,13 +164,20 @@ color: var(main-text-color);
 
 /* ========PROTFOLIO========== */
 
-.btn-list-item {
+.btn-item {
 font-family: inherit;    
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
+text-align: center;
 cursor: pointer;
-color:var(--secondary-text-color)
+color:var(--secondary-text-color);
+background-color: var(--btn-background);
+}
+.btn-current {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+  
 }
 
 .example-title {
