@@ -6,7 +6,8 @@
   --white-text-color: #ffffff;
   --accent-color: #2196f3;
   --contacts-footer-color: rgba(255, 255, 255, 0.6);
-  --main-bgr-color: #e5e5e5;
+  --main-bgr-color: #e5e5e5; 
+  --color: #E5E5E5;
   --secondary-bgr-color: #2f303a;
   --logo-black-theme: #000;
   --logo-white-theme: #fff; 
@@ -17,6 +18,9 @@
 body {
   font-family: var(--main-font);
   color: var(--main-text-color);
+  
+}
+.body {
   background-color: var(--main-bgr-color);
 }
 
@@ -41,16 +45,10 @@ body {
 }
 .logo-black-item {
 font-family: var(--secondary-font);
-font-style: 700;
-font-size: 26px;
-line-height: 1.19;
 color: var(--logo-black-theme);
 }
 .logo-white-item {
 font-family: var(--secondary-font);
-font-style: 700;
-font-size: 26px;
-line-height: 1.19;
 color: var(--logo-white-theme);
 }
 
@@ -69,24 +67,20 @@ color: var(--logo-white-theme);
     color: var(--accent-color);
 }
 
-.mail-link {
+.contact-list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  }
+}
+
+
 
 .mail-link:hover,
 .mail-link:focus {
   color: var(--accent-color);
 }
-.tel-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
- 
-}
+
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
@@ -174,22 +168,28 @@ cursor: pointer;
 color:var(--secondary-text-color);
 background-color: var(--btn-background);
 }
+.btn-item:hover,
+.btn-item:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color); 
+}
 .btn-current {
   color: var(--white-text-color);
   background-color: var(--accent-color);
   
 }
 
-.example-title {
-font-weight: 700;
+.examples-list {
 font-size: 18px;
 line-height: 2;
+}
+
+.example-title {
+font-weight: 700;
 letter-spacing: 0.06em;
 color: var(--secondary-text-color);
 }
 .examples-desc {
-font-size: 18px;
-line-height: 2;
 letter-spacing: 0.03em;
 color: var(--main-text-color);
 }
